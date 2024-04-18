@@ -1,5 +1,6 @@
 :root{
-   --cor-de-fundo: #F5F5F5;
+    
+    --cor-de-fundo: #F5F5F5;
    --cor-de-link: #000;
 }
 
@@ -10,6 +11,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1;
+    overflow: hidden;
 }
 ol, ul,li {
     list-style: none;
@@ -34,14 +36,46 @@ https://en.bem.info/methodology/quick-start/*/
 
 /*Sessão Menu*/
 
-section.menu{
+section.menu {
+    display: flex;
+    justify-content: space-around;
+}
 
+.menu__vetor {
+    display: flex;
+    gap: 10px;
+}
+
+.menu__lista {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 15px;
+}
+
+.menu__lista__item {
+    
+}
+
+.menu__list__item__contato {
+    display: none;
 }
 
 /*Sessão Title*/
 
 section.title{
+    display: flex;
+    justify-content: space-around;
+}
 
+.title__profile {
+
+}
+
+.title__network {
+    display: flex;
+    justify-content: left;
+    gap: 32px;
 }
 
 /*Sessão About*/
